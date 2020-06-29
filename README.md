@@ -10,7 +10,13 @@
 Description goes here.
 
 ## How to  Install <a name="install"></a>
-Install  insructions 
+
+currenlty only by downloading `htrc_text_processing` folder and placed in your working directory.
+
+easiest way is clone the repo and running `example1.py`.
+
+TODO 
+need to create a pip install verion (after creating all functionalities)  
 
 ## What you can do with this. <a name="usage"></a>
 
