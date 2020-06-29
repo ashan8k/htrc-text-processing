@@ -13,5 +13,9 @@ Description goes here.
 Install  insructions 
 
 ## What you can do with this. <a name="usage"></a>
-Useage
 
+A function that finds the zip files at the end of the pairtree, moves them to a new folder and expands them, removing the zips
+
+```import htrc_text_processing as htrc_tp```
+
+`htrc_tp.get_zips_only('pairtree-data', 'output_only_zip_files')`
