@@ -13,7 +13,7 @@ Description goes here.
 
 currenlty only by downloading `htrc_text_processing` folder and placed in your working directory.
 
-easiest way is clone the repo and running `example1.py`.
+easiest way is, just clone the repo and run `example1.py`.
 
 TODO 
 need to create a pip install verion (after creating all functionalities)  
