@@ -12,7 +12,11 @@ from tqdm import tqdm
 from htrc.models import HtrcPage
 from htrc.runningheaders import parse_page_structure
 
+
 def get_zips_only(data_dir, output_dir):
+    file_path = Path(file)
+    if file_path.exists():
+        print(file_path.name)
     if os.path.isdir(data_dir):
         if not os.path.isdir(output_dir):
             try:
@@ -22,7 +26,7 @@ def get_zips_only(data_dir, output_dir):
             else:
                 print("Successfully created the directory %s " % output_dir)
 
-        for x in glob.glob(data_dir + '/**/*.zip', recursive=True):
+        for x in tqdm(glob.glob(data_dir + '/**/*.zip', recursive=True)):
             # print(x)
             shutil.copy(x, output_dir)
     else:
