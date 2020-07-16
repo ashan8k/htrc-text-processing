@@ -14,9 +14,9 @@ from htrc.runningheaders import parse_page_structure
 
 
 def get_zips_only(data_dir, output_dir):
-    file_path = Path(file)
-    if file_path.exists():
-        print(file_path.name)
+    #file_path = Path(file)
+    #if file_path.exists():
+    #    print(file_path.name)
     if os.path.isdir(data_dir):
         if not os.path.isdir(output_dir):
             try:
