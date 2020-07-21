@@ -1,0 +1,672 @@
+<?xml version="1.0"?>
+<METS:mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:METS="http://www.loc.gov/METS/" xmlns:PREMIS="info:lc/xmlns/premis-v2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:HT="http://www.hathitrust.org/premis_extension" OBJID="psia.ark:/13960/t0ks80527" PROFILE="http://www.hathitrust.org/documents/hathitrust-mets-profile2.0.xml" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd info:lc/xmlns/premis-v2 http://www.loc.gov/standards/premis/v2/premis-v2-0.xsd">
+  <METS:metsHdr ID="HDR1" CREATEDATE="2013-02-11T14:31:02Z" RECORDSTATUS="NEW">
+    <METS:agent TYPE="ORGANIZATION" ROLE="CREATOR">
+      <METS:name>HathiTrust</METS:name>
+    </METS:agent>
+  </METS:metsHdr>
+  <METS:dmdSec ID="DMD1">
+    <METS:mdRef OTHERLOCTYPE="Item ID stored in HathiTrust Metadata Management System" LOCTYPE="OTHER" MDTYPE="MARC" XPTR="psia.ark:/13960/t0ks80527"/>
+  </METS:dmdSec>
+  <METS:amdSec ID="AMD1">
+    <METS:digiprovMD ID="premis1">
+      <METS:mdWrap MIMETYPE="text/xml" MDTYPE="PREMIS">
+        <METS:xmlData>
+          <PREMIS:premis version="2.0">
+            <PREMIS:object xsi:type="PREMIS:representation">
+              <PREMIS:objectIdentifier>
+                <PREMIS:objectIdentifierType>HathiTrust</PREMIS:objectIdentifierType>
+                <PREMIS:objectIdentifierValue>psia.ark:/13960/t0ks80527</PREMIS:objectIdentifierValue>
+              </PREMIS:objectIdentifier>
+              <PREMIS:significantProperties>
+                <PREMIS:significantPropertiesType>file count</PREMIS:significantPropertiesType>
+                <PREMIS:significantPropertiesValue>72</PREMIS:significantPropertiesValue>
+              </PREMIS:significantProperties>
+              <PREMIS:significantProperties>
+                <PREMIS:significantPropertiesType>page count</PREMIS:significantPropertiesType>
+                <PREMIS:significantPropertiesValue>24</PREMIS:significantPropertiesValue>
+              </PREMIS:significantProperties>
+            </PREMIS:object>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>89e75f13-fa0d-3b09-9a49-f546098adb3c</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>capture</PREMIS:eventType>
+              <PREMIS:eventDateTime>2012-11-27T15:59:20Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>Initial capture of item</PREMIS:eventDetail>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>CaSfIA</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>scribe7.indiana.archive.org</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>image capture</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>af242a55-953f-387a-a3cb-26e95cfb79e3</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>package inspection</PREMIS:eventType>
+              <PREMIS:eventDateTime>2013-02-11T14:30:46Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>Inspection of download package for missing files</PREMIS:eventDetail>
+              <PREMIS:eventOutcomeInformation>
+                <PREMIS:eventOutcome>warning</PREMIS:eventOutcome>
+                <PREMIS:eventOutcomeDetail>
+                  <PREMIS:eventOutcomeDetailNote>files missing</PREMIS:eventOutcomeDetailNote>
+                  <PREMIS:eventOutcomeDetailExtension>
+                    <HT:fileList status="missing">
+                      <HT:file>salmonfryproduct00bail_scanfactors.xml</HT:file>
+                    </HT:fileList>
+                  </PREMIS:eventOutcomeDetailExtension>
+                </PREMIS:eventOutcomeDetail>
+              </PREMIS:eventOutcomeInformation>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>MiU</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>feedd.pl 0.14.3</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>a74863f7-b2f2-3d64-8335-b8fada2d24a1</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>ocr split</PREMIS:eventType>
+              <PREMIS:eventDateTime>2013-02-11T14:30:48Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>Splitting of IA XML OCR into one plain text OCR file and one XML file (with coordinates) per page</PREMIS:eventDetail>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>MiU</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>feedd.pl 0.14.3</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>9525909e-0336-3593-be54-3bd284ecc5cd</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>file rename</PREMIS:eventType>
+              <PREMIS:eventDateTime>2013-02-11T14:30:55Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>File renaming to HathiTrust conventions</PREMIS:eventDetail>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>MiU</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>feedd.pl 0.14.3</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>e0f4ba9b-e171-3e19-8a57-0a308f4435fe</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>image header modification</PREMIS:eventType>
+              <PREMIS:eventDateTime>2013-02-11T14:30:55Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>Modification of image headers to meet HathiTrust conventions</PREMIS:eventDetail>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>MiU</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>feedd.pl 0.14.3</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>Image::ExifTool 8.77</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>5c22aed0-7121-3008-aabb-e0766330e56e</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>message digest calculation</PREMIS:eventType>
+              <PREMIS:eventDateTime>2013-02-11T14:30:55Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>Calculation of MD5 checksums for image and OCR files</PREMIS:eventDetail>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>MiU</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>Digest::MD5 2.39</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>8451dd97-ceb4-3ded-9003-edac63dbe0c6</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>source mets creation</PREMIS:eventType>
+              <PREMIS:eventDateTime>2013-02-11T14:30:55Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>Creation of source METS file</PREMIS:eventDetail>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>MiU</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>feedd.pl 0.14.3</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>947fe3a3-6f5f-33a0-8cab-4679918d1e5b</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>fixity check</PREMIS:eventType>
+              <PREMIS:eventDateTime>2013-02-11T14:30:56Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>Validation of MD5 checksums for image and OCR files</PREMIS:eventDetail>
+              <PREMIS:eventOutcomeInformation>
+                <PREMIS:eventOutcome>pass</PREMIS:eventOutcome>
+              </PREMIS:eventOutcomeInformation>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>MiU</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>Digest::MD5 2.39</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>84710d07-ce6e-3dba-a80e-ce852559cfa7</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>validation</PREMIS:eventType>
+              <PREMIS:eventDateTime>2013-02-11T14:31:02Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>Validation of technical characteristics of image and OCR files</PREMIS:eventDetail>
+              <PREMIS:eventOutcomeInformation>
+                <PREMIS:eventOutcome>pass</PREMIS:eventOutcome>
+              </PREMIS:eventOutcomeInformation>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>MiU</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>feedd.pl 0.14.3</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>JHOVE 1.5</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>xerces-c-3.0.1-20.el6.x86_64</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>c2f2901c-ae9e-3df4-bce1-64efbfd7a6bc</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>page feature mapping</PREMIS:eventType>
+              <PREMIS:eventDateTime>2013-02-11T14:31:02Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>Mapping of original page feature tags to HathiTrust tags</PREMIS:eventDetail>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>MiU</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>feedd.pl 0.14.3</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>704d3f8f-49d8-301d-917a-a8b8b3ab0f8c</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>zip archive creation</PREMIS:eventType>
+              <PREMIS:eventDateTime>2013-02-11T14:31:02Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>Compression of content files and source METS into zip archive</PREMIS:eventDetail>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>MiU</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>zip-3.0-1.el6.x86_64</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>a9bc765c-c1fa-3c5a-9925-dd255e717fb8</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>zip file message digest calculation</PREMIS:eventType>
+              <PREMIS:eventDateTime>2013-02-11T14:31:02Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>Calculation of md5 checksum for zip archive</PREMIS:eventDetail>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>MiU</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>Digest::MD5 2.39</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+            <PREMIS:event>
+              <PREMIS:eventIdentifier>
+                <PREMIS:eventIdentifierType>UUID</PREMIS:eventIdentifierType>
+                <PREMIS:eventIdentifierValue>209eed6e-a722-3d54-972c-5c676ff24aa0</PREMIS:eventIdentifierValue>
+              </PREMIS:eventIdentifier>
+              <PREMIS:eventType>ingestion</PREMIS:eventType>
+              <PREMIS:eventDateTime>2013-02-11T14:31:02Z</PREMIS:eventDateTime>
+              <PREMIS:eventDetail>Ingestion of object package into repository</PREMIS:eventDetail>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>MARC21 Code</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>MiU</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>Executor</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+              <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>tool</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>feedd.pl 0.14.3</PREMIS:linkingAgentIdentifierValue>
+                <PREMIS:linkingAgentRole>software</PREMIS:linkingAgentRole>
+              </PREMIS:linkingAgentIdentifier>
+            </PREMIS:event>
+          </PREMIS:premis>
+        </METS:xmlData>
+      </METS:mdWrap>
+    </METS:digiprovMD>
+  </METS:amdSec>
+  <METS:fileSec>
+    <METS:fileGrp ID="FG1" USE="zip archive">
+      <METS:file SIZE="12785181" ID="ZIP00000001" MIMETYPE="application/zip" CREATED="2013-02-11T14:31:02Z" CHECKSUM="e55e4ccb49b184084a0ad7451cb9fdf5" SEQ="00000001" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="ark+=13960=t0ks80527.zip"/>
+      </METS:file>
+    </METS:fileGrp>
+    <METS:fileGrp ID="FG2" USE="source METS">
+      <METS:file SIZE="88030" ID="METS00000001" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:56Z" CHECKSUM="51c826e8b3dc7e4d926d07e39e34be05" SEQ="00000001" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="IA_ark+=13960=t0ks80527.xml"/>
+      </METS:file>
+    </METS:fileGrp>
+    <METS:fileGrp ID="FG3" USE="coordOCR">
+      <METS:file SIZE="4192" ID="XML00000001" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="43dce5bb0241bba9b7f35951c78f05df" SEQ="00000001" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000001.xml"/>
+      </METS:file>
+      <METS:file SIZE="7745" ID="XML00000002" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="d0c74bcca72d8bd1e578f63f58ba6a3e" SEQ="00000002" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000002.xml"/>
+      </METS:file>
+      <METS:file SIZE="4896" ID="XML00000003" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="d353131d58ae3971a598bf4803e6e7dd" SEQ="00000003" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000003.xml"/>
+      </METS:file>
+      <METS:file SIZE="5296" ID="XML00000004" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="eae89dad4574e50f52b1441a665cabad" SEQ="00000004" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000004.xml"/>
+      </METS:file>
+      <METS:file SIZE="20694" ID="XML00000005" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="cceaa35d65a8bf29df9195b65d3e865b" SEQ="00000005" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000005.xml"/>
+      </METS:file>
+      <METS:file SIZE="7907" ID="XML00000006" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="33e0a37e13f1420232959312a5bd40bf" SEQ="00000006" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000006.xml"/>
+      </METS:file>
+      <METS:file SIZE="37811" ID="XML00000007" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="ea9cd57d4e4679858968efb32cc083c2" SEQ="00000007" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000007.xml"/>
+      </METS:file>
+      <METS:file SIZE="37660" ID="XML00000008" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="52c0ac837d4ff208f81eee1ebd46a999" SEQ="00000008" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000008.xml"/>
+      </METS:file>
+      <METS:file SIZE="2173" ID="XML00000009" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="bfa804b8658ecf8bf3019d97d4ecbca7" SEQ="00000009" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000009.xml"/>
+      </METS:file>
+      <METS:file SIZE="40400" ID="XML00000010" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="bfb887f1814dd040b3de991bde12850a" SEQ="00000010" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000010.xml"/>
+      </METS:file>
+      <METS:file SIZE="39353" ID="XML00000011" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="b4b333cd7e76d5df4140e94acbd028c5" SEQ="00000011" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000011.xml"/>
+      </METS:file>
+      <METS:file SIZE="26073" ID="XML00000012" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="63581596d60c8c355ebc693911ac9077" SEQ="00000012" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000012.xml"/>
+      </METS:file>
+      <METS:file SIZE="43669" ID="XML00000013" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="623cb7f9363b279d57c1230e1ad5db34" SEQ="00000013" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000013.xml"/>
+      </METS:file>
+      <METS:file SIZE="35106" ID="XML00000014" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="ee11e58a79c9fc75c7f73f4e1e0bbac8" SEQ="00000014" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000014.xml"/>
+      </METS:file>
+      <METS:file SIZE="52155" ID="XML00000015" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="58d81ec546ffeaf060fb1a8afc9cedf9" SEQ="00000015" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000015.xml"/>
+      </METS:file>
+      <METS:file SIZE="55934" ID="XML00000016" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="bffedb57098fa6e5b99bf429ec7526c4" SEQ="00000016" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000016.xml"/>
+      </METS:file>
+      <METS:file SIZE="43138" ID="XML00000017" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="0eba0d50774269b37ae478f4e4d7b894" SEQ="00000017" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000017.xml"/>
+      </METS:file>
+      <METS:file SIZE="43579" ID="XML00000018" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="d022b1992ed2546ddaef06a00b9963c0" SEQ="00000018" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000018.xml"/>
+      </METS:file>
+      <METS:file SIZE="43476" ID="XML00000019" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="e8b239ecefb38fc33b9c87d622f2ba98" SEQ="00000019" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000019.xml"/>
+      </METS:file>
+      <METS:file SIZE="403" ID="XML00000020" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="2d0991d24860d623b0859c1f2958a2d4" SEQ="00000020" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000020.xml"/>
+      </METS:file>
+      <METS:file SIZE="403" ID="XML00000021" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="a21501292306ba4f9a939618489c2895" SEQ="00000021" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000021.xml"/>
+      </METS:file>
+      <METS:file SIZE="403" ID="XML00000022" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="01ebc5833a08bf07093eb4383641395c" SEQ="00000022" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000022.xml"/>
+      </METS:file>
+      <METS:file SIZE="403" ID="XML00000023" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="134738f248c347fb29a65dc2b2c88b6d" SEQ="00000023" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000023.xml"/>
+      </METS:file>
+      <METS:file SIZE="844" ID="XML00000024" MIMETYPE="text/xml" CREATED="2013-02-11T14:30:48Z" CHECKSUM="4ca3b100073968cc70fe06b800863674" SEQ="00000024" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000024.xml"/>
+      </METS:file>
+    </METS:fileGrp>
+    <METS:fileGrp ID="FG4" USE="ocr">
+      <METS:file SIZE="436" ID="OCR00000001" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="6729f5bef3edadb615c75dc9b52bb219" SEQ="00000001" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000001.txt"/>
+      </METS:file>
+      <METS:file SIZE="942" ID="OCR00000002" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="990e2e7393620d864297927968dad030" SEQ="00000002" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000002.txt"/>
+      </METS:file>
+      <METS:file SIZE="507" ID="OCR00000003" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="0cb9c56efe7f8304e483fe77181b2858" SEQ="00000003" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000003.txt"/>
+      </METS:file>
+      <METS:file SIZE="592" ID="OCR00000004" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="ea62451d673166f8f2d7d82b2a389163" SEQ="00000004" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000004.txt"/>
+      </METS:file>
+      <METS:file SIZE="2203" ID="OCR00000005" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="1a1561d4bdb5e60868ff69ae3a47c69e" SEQ="00000005" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000005.txt"/>
+      </METS:file>
+      <METS:file SIZE="830" ID="OCR00000006" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="ba689b1c6f6b1891c7813b8233a57cc0" SEQ="00000006" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000006.txt"/>
+      </METS:file>
+      <METS:file SIZE="4432" ID="OCR00000007" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="15a3eb0ac80221de3eb764f962d3cc44" SEQ="00000007" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000007.txt"/>
+      </METS:file>
+      <METS:file SIZE="4306" ID="OCR00000008" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="a2002c6ac1963b91bf5c25047efd2508" SEQ="00000008" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000008.txt"/>
+      </METS:file>
+      <METS:file SIZE="174" ID="OCR00000009" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="4a1ef20abc79f6419eb72c3babe55f96" SEQ="00000009" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000009.txt"/>
+      </METS:file>
+      <METS:file SIZE="4305" ID="OCR00000010" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="7a607323ed4816ea58a3af5c45439fbd" SEQ="00000010" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000010.txt"/>
+      </METS:file>
+      <METS:file SIZE="3961" ID="OCR00000011" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="b44c1136e39d613bc2f7c8589039088e" SEQ="00000011" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000011.txt"/>
+      </METS:file>
+      <METS:file SIZE="2733" ID="OCR00000012" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="0094bfd6c53b0af44c52f51894d1438d" SEQ="00000012" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000012.txt"/>
+      </METS:file>
+      <METS:file SIZE="4902" ID="OCR00000013" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="62a45e6a67ac00b5dfac1fa98d64b4ee" SEQ="00000013" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000013.txt"/>
+      </METS:file>
+      <METS:file SIZE="3226" ID="OCR00000014" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="4e5bfbd331f2ce95df2e4d7ea872df32" SEQ="00000014" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000014.txt"/>
+      </METS:file>
+      <METS:file SIZE="5652" ID="OCR00000015" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="f81e6936ad35940c3342d74291d0a358" SEQ="00000015" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000015.txt"/>
+      </METS:file>
+      <METS:file SIZE="4878" ID="OCR00000016" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="23638ff1e446ae0b37f82f8da1f12db0" SEQ="00000016" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000016.txt"/>
+      </METS:file>
+      <METS:file SIZE="4335" ID="OCR00000017" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="14fcca2431d563831347dee1e714de47" SEQ="00000017" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000017.txt"/>
+      </METS:file>
+      <METS:file SIZE="3792" ID="OCR00000018" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="79c71ad8d0d50e6e1a56510d8798acbc" SEQ="00000018" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000018.txt"/>
+      </METS:file>
+      <METS:file SIZE="5113" ID="OCR00000019" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="84d61d7867403c487b14ad2a8646a1d4" SEQ="00000019" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000019.txt"/>
+      </METS:file>
+      <METS:file SIZE="0" ID="OCR00000020" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="d41d8cd98f00b204e9800998ecf8427e" SEQ="00000020" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000020.txt"/>
+      </METS:file>
+      <METS:file SIZE="0" ID="OCR00000021" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="d41d8cd98f00b204e9800998ecf8427e" SEQ="00000021" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000021.txt"/>
+      </METS:file>
+      <METS:file SIZE="0" ID="OCR00000022" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="d41d8cd98f00b204e9800998ecf8427e" SEQ="00000022" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000022.txt"/>
+      </METS:file>
+      <METS:file SIZE="0" ID="OCR00000023" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="d41d8cd98f00b204e9800998ecf8427e" SEQ="00000023" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000023.txt"/>
+      </METS:file>
+      <METS:file SIZE="51" ID="OCR00000024" MIMETYPE="text/plain" CREATED="2013-02-11T14:30:48Z" CHECKSUM="16a82fb049df8bbfa0b936c172c794e5" SEQ="00000024" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000024.txt"/>
+      </METS:file>
+    </METS:fileGrp>
+    <METS:fileGrp ID="FG5" USE="image">
+      <METS:file SIZE="585271" ID="IMG00000001" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:53Z" CHECKSUM="91f90d84c281647d550f2e19e1448f72" SEQ="00000001" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000001.jp2"/>
+      </METS:file>
+      <METS:file SIZE="323609" ID="IMG00000002" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:54Z" CHECKSUM="cb97b2f324efc24d7b7f4c088f12628e" SEQ="00000002" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000002.jp2"/>
+      </METS:file>
+      <METS:file SIZE="134301" ID="IMG00000003" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:51Z" CHECKSUM="6a7e7456f04ceb08fca8f9d319413096" SEQ="00000003" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000003.jp2"/>
+      </METS:file>
+      <METS:file SIZE="137550" ID="IMG00000004" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:51Z" CHECKSUM="74f7a81ecfc53970348b3d4239fbf86c" SEQ="00000004" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000004.jp2"/>
+      </METS:file>
+      <METS:file SIZE="459895" ID="IMG00000005" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:53Z" CHECKSUM="019b0a80eb79bc2ca5948930c93025f8" SEQ="00000005" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000005.jp2"/>
+      </METS:file>
+      <METS:file SIZE="188626" ID="IMG00000006" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:52Z" CHECKSUM="af16bb3211af106c4f5ae52a1fbe1679" SEQ="00000006" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000006.jp2"/>
+      </METS:file>
+      <METS:file SIZE="789563" ID="IMG00000007" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:49Z" CHECKSUM="55d31054603aea8321377d89e2aa4603" SEQ="00000007" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000007.jp2"/>
+      </METS:file>
+      <METS:file SIZE="791650" ID="IMG00000008" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:55Z" CHECKSUM="f77a58354b09c5ebae4c485baba1ca11" SEQ="00000008" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000008.jp2"/>
+      </METS:file>
+      <METS:file SIZE="1487554" ID="IMG00000009" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:51Z" CHECKSUM="847c31d872571630b444c79a023a0850" SEQ="00000009" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000009.jp2"/>
+      </METS:file>
+      <METS:file SIZE="839748" ID="IMG00000010" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:54Z" CHECKSUM="409aec283468c1e39942311df3987240" SEQ="00000010" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000010.jp2"/>
+      </METS:file>
+      <METS:file SIZE="762387" ID="IMG00000011" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:50Z" CHECKSUM="6f3f7f56387e6a42469a343f95fc523b" SEQ="00000011" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000011.jp2"/>
+      </METS:file>
+      <METS:file SIZE="593286" ID="IMG00000012" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:52Z" CHECKSUM="eb7d855a6faa4051d9a599f094d36936" SEQ="00000012" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000012.jp2"/>
+      </METS:file>
+      <METS:file SIZE="905250" ID="IMG00000013" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:51Z" CHECKSUM="fe0cc7c3022714322a52278e939abeb9" SEQ="00000013" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000013.jp2"/>
+      </METS:file>
+      <METS:file SIZE="461426" ID="IMG00000014" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:52Z" CHECKSUM="bcd9645188618df494a17de89e6c5f1b" SEQ="00000014" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000014.jp2"/>
+      </METS:file>
+      <METS:file SIZE="1034521" ID="IMG00000015" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:53Z" CHECKSUM="bb3e049d6782e74e9251d88b3cd7cfa5" SEQ="00000015" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000015.jp2"/>
+      </METS:file>
+      <METS:file SIZE="465375" ID="IMG00000016" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:52Z" CHECKSUM="b621406f945acfa0fe7ea087d61afcea" SEQ="00000016" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000016.jp2"/>
+      </METS:file>
+      <METS:file SIZE="705560" ID="IMG00000017" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:54Z" CHECKSUM="91402ba08ae57ba7f9678cb1d3ef4329" SEQ="00000017" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000017.jp2"/>
+      </METS:file>
+      <METS:file SIZE="480214" ID="IMG00000018" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:54Z" CHECKSUM="04fe3a1029834e99a5d711fbfc9903f4" SEQ="00000018" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000018.jp2"/>
+      </METS:file>
+      <METS:file SIZE="833150" ID="IMG00000019" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:50Z" CHECKSUM="d21ad5f9179d5dc8f3703fd4467d68ee" SEQ="00000019" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000019.jp2"/>
+      </METS:file>
+      <METS:file SIZE="31039" ID="IMG00000020" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:53Z" CHECKSUM="59944099a2b224e3850c322b1edc1852" SEQ="00000020" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000020.jp2"/>
+      </METS:file>
+      <METS:file SIZE="29444" ID="IMG00000021" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:49Z" CHECKSUM="30e64969887a8c6f5aeedddc3cdeff4c" SEQ="00000021" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000021.jp2"/>
+      </METS:file>
+      <METS:file SIZE="35223" ID="IMG00000022" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:55Z" CHECKSUM="11a8a0436ee0a800eaae5b2aa1113c42" SEQ="00000022" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000022.jp2"/>
+      </METS:file>
+      <METS:file SIZE="223217" ID="IMG00000023" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:50Z" CHECKSUM="57b1ee8ba4a71ab7f8c5c0d68799ea84" SEQ="00000023" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000023.jp2"/>
+      </METS:file>
+      <METS:file SIZE="303008" ID="IMG00000024" MIMETYPE="image/jp2" CREATED="2013-02-11T14:30:50Z" CHECKSUM="462fb24ffe6a9ac70e947739b252f600" SEQ="00000024" CHECKSUMTYPE="MD5">
+        <METS:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="SYSTEM" xlink:href="00000024.jp2"/>
+      </METS:file>
+    </METS:fileGrp>
+  </METS:fileSec>
+  <METS:structMap ID="SM1" TYPE="physical">
+    <METS:div TYPE="volume">
+      <METS:div ORDER="1" LABEL="RIGHT, COVER" TYPE="page" ORDERLABEL="">
+        <METS:fptr FILEID="XML00000001"/>
+        <METS:fptr FILEID="OCR00000001"/>
+        <METS:fptr FILEID="IMG00000001"/>
+      </METS:div>
+      <METS:div ORDER="2" LABEL="LEFT" TYPE="page" ORDERLABEL="">
+        <METS:fptr FILEID="XML00000002"/>
+        <METS:fptr FILEID="OCR00000002"/>
+        <METS:fptr FILEID="IMG00000002"/>
+      </METS:div>
+      <METS:div ORDER="3" LABEL="RIGHT" TYPE="page" ORDERLABEL="">
+        <METS:fptr FILEID="XML00000003"/>
+        <METS:fptr FILEID="OCR00000003"/>
+        <METS:fptr FILEID="IMG00000003"/>
+      </METS:div>
+      <METS:div ORDER="4" LABEL="LEFT" TYPE="page" ORDERLABEL="">
+        <METS:fptr FILEID="XML00000004"/>
+        <METS:fptr FILEID="OCR00000004"/>
+        <METS:fptr FILEID="IMG00000004"/>
+      </METS:div>
+      <METS:div ORDER="5" LABEL="RIGHT, TABLE_OF_CONTENTS" TYPE="page" ORDERLABEL="">
+        <METS:fptr FILEID="XML00000005"/>
+        <METS:fptr FILEID="OCR00000005"/>
+        <METS:fptr FILEID="IMG00000005"/>
+      </METS:div>
+      <METS:div ORDER="6" LABEL="LEFT" TYPE="page" ORDERLABEL="">
+        <METS:fptr FILEID="XML00000006"/>
+        <METS:fptr FILEID="OCR00000006"/>
+        <METS:fptr FILEID="IMG00000006"/>
+      </METS:div>
+      <METS:div ORDER="7" LABEL="RIGHT" TYPE="page" ORDERLABEL="1">
+        <METS:fptr FILEID="XML00000007"/>
+        <METS:fptr FILEID="OCR00000007"/>
+        <METS:fptr FILEID="IMG00000007"/>
+      </METS:div>
+      <METS:div ORDER="8" LABEL="LEFT" TYPE="page" ORDERLABEL="2">
+        <METS:fptr FILEID="XML00000008"/>
+        <METS:fptr FILEID="OCR00000008"/>
+        <METS:fptr FILEID="IMG00000008"/>
+      </METS:div>
+      <METS:div ORDER="9" LABEL="RIGHT" TYPE="page" ORDERLABEL="3">
+        <METS:fptr FILEID="XML00000009"/>
+        <METS:fptr FILEID="OCR00000009"/>
+        <METS:fptr FILEID="IMG00000009"/>
+      </METS:div>
+      <METS:div ORDER="10" LABEL="LEFT" TYPE="page" ORDERLABEL="4">
+        <METS:fptr FILEID="XML00000010"/>
+        <METS:fptr FILEID="OCR00000010"/>
+        <METS:fptr FILEID="IMG00000010"/>
+      </METS:div>
+      <METS:div ORDER="11" LABEL="RIGHT" TYPE="page" ORDERLABEL="5">
+        <METS:fptr FILEID="XML00000011"/>
+        <METS:fptr FILEID="OCR00000011"/>
+        <METS:fptr FILEID="IMG00000011"/>
+      </METS:div>
+      <METS:div ORDER="12" LABEL="LEFT" TYPE="page" ORDERLABEL="6">
+        <METS:fptr FILEID="XML00000012"/>
+        <METS:fptr FILEID="OCR00000012"/>
+        <METS:fptr FILEID="IMG00000012"/>
+      </METS:div>
+      <METS:div ORDER="13" LABEL="RIGHT" TYPE="page" ORDERLABEL="7">
+        <METS:fptr FILEID="XML00000013"/>
+        <METS:fptr FILEID="OCR00000013"/>
+        <METS:fptr FILEID="IMG00000013"/>
+      </METS:div>
+      <METS:div ORDER="14" LABEL="LEFT" TYPE="page" ORDERLABEL="8">
+        <METS:fptr FILEID="XML00000014"/>
+        <METS:fptr FILEID="OCR00000014"/>
+        <METS:fptr FILEID="IMG00000014"/>
+      </METS:div>
+      <METS:div ORDER="15" LABEL="RIGHT" TYPE="page" ORDERLABEL="9">
+        <METS:fptr FILEID="XML00000015"/>
+        <METS:fptr FILEID="OCR00000015"/>
+        <METS:fptr FILEID="IMG00000015"/>
+      </METS:div>
+      <METS:div ORDER="16" LABEL="LEFT" TYPE="page" ORDERLABEL="10">
+        <METS:fptr FILEID="XML00000016"/>
+        <METS:fptr FILEID="OCR00000016"/>
+        <METS:fptr FILEID="IMG00000016"/>
+      </METS:div>
+      <METS:div ORDER="17" LABEL="RIGHT" TYPE="page" ORDERLABEL="11">
+        <METS:fptr FILEID="XML00000017"/>
+        <METS:fptr FILEID="OCR00000017"/>
+        <METS:fptr FILEID="IMG00000017"/>
+      </METS:div>
+      <METS:div ORDER="18" LABEL="LEFT" TYPE="page" ORDERLABEL="12">
+        <METS:fptr FILEID="XML00000018"/>
+        <METS:fptr FILEID="OCR00000018"/>
+        <METS:fptr FILEID="IMG00000018"/>
+      </METS:div>
+      <METS:div ORDER="19" LABEL="RIGHT" TYPE="page" ORDERLABEL="13">
+        <METS:fptr FILEID="XML00000019"/>
+        <METS:fptr FILEID="OCR00000019"/>
+        <METS:fptr FILEID="IMG00000019"/>
+      </METS:div>
+      <METS:div ORDER="20" LABEL="LEFT" TYPE="page" ORDERLABEL="">
+        <METS:fptr FILEID="XML00000020"/>
+        <METS:fptr FILEID="OCR00000020"/>
+        <METS:fptr FILEID="IMG00000020"/>
+      </METS:div>
+      <METS:div ORDER="21" LABEL="RIGHT" TYPE="page" ORDERLABEL="">
+        <METS:fptr FILEID="XML00000021"/>
+        <METS:fptr FILEID="OCR00000021"/>
+        <METS:fptr FILEID="IMG00000021"/>
+      </METS:div>
+      <METS:div ORDER="22" LABEL="LEFT" TYPE="page" ORDERLABEL="">
+        <METS:fptr FILEID="XML00000022"/>
+        <METS:fptr FILEID="OCR00000022"/>
+        <METS:fptr FILEID="IMG00000022"/>
+      </METS:div>
+      <METS:div ORDER="23" LABEL="RIGHT" TYPE="page" ORDERLABEL="">
+        <METS:fptr FILEID="XML00000023"/>
+        <METS:fptr FILEID="OCR00000023"/>
+        <METS:fptr FILEID="IMG00000023"/>
+      </METS:div>
+      <METS:div ORDER="24" LABEL="LEFT, COVER" TYPE="page" ORDERLABEL="">
+        <METS:fptr FILEID="XML00000024"/>
+        <METS:fptr FILEID="OCR00000024"/>
+        <METS:fptr FILEID="IMG00000024"/>
+      </METS:div>
+    </METS:div>
+  </METS:structMap>
+</METS:mets>
