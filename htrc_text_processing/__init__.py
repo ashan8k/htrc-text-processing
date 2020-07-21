@@ -1,52 +1,51 @@
+# Main Library file
+# by Ashan Liyanage
+
 import glob
 import os
 import shutil
 from zipfile import ZipFile
 from pathlib import Path
 import warnings
-
 from typing import List
-
 from tqdm import tqdm
+from htrc_text_processing.htrc.models import HtrcPage
+from htrc_text_processing.htrc.runningheaders import parse_page_structure
 
-from htrc.models import HtrcPage
-from htrc.runningheaders import parse_page_structure
 
-
-def get_zips_only(data_dir, output_dir):
-    #file_path = Path(file)
-    #if file_path.exists():
-    #    print(file_path.name)
-    if os.path.isdir(data_dir):
-        if not os.path.isdir(output_dir):
+def get_zips(data_dir, output_dir, cmd='x'):
+    data_path = Path(data_dir)
+    output_path = Path(output_dir)
+    if data_path.exists():  # Checking the given input part
+        # print(file_path.name)
+        if output_path.exists():
+            raise Exception(output_dir + ' is Already created. please delete it or give me a different path')
+        else:
             try:
-                os.mkdir(output_dir)
+                os.mkdir(output_path.parent / output_path.name)
+
             except OSError:
-                print("Creation of the directory %s failed" % output_dir)
+                raise Exception("Creation of the directory %s failed" % output_dir +
+                                "\n* Possible reason there's no \'" + str(output_path.parent) + "\' folder")
             else:
-                print("Successfully created the directory %s " % output_dir)
+                print("Successfully created the directory \'%s\' " % output_dir)
 
-        for x in tqdm(glob.glob(data_dir + '/**/*.zip', recursive=True)):
-            # print(x)
-            shutil.copy(x, output_dir)
-    else:
-        raise Exception(data_dir + ' path does not exists!')
+            for x in tqdm(glob.glob(data_dir + '/**/*.zip', recursive=True)):
+                # print(x)
+                if cmd == 'x':
+                    with ZipFile(x, 'r') as zipObj:
+                        zipObj.extractall(output_path.parent / output_path.name)
 
-
-def get_zips_extract(data_dir, output_dir):
-    if os.path.isdir(data_dir):
-        if not os.path.isdir(output_dir):
-            try:
-                os.mkdir(output_dir)
-            except OSError:
-                print("Creation of the directory %s failed" % output_dir)
-            else:
-                print("Successfully created the directory %s " % output_dir)
-
-        for x in glob.glob(data_dir + '/**/*.zip', recursive=True):
-            # print(x)
-            with ZipFile(x, 'r') as zipObj:
-                zipObj.extractall(output_dir)
+                    # for meta data xml
+                    x_data = Path(x)
+                    xml_path = x_data.parent / x_data.name.replace('.zip', '.mets.xml')
+                    folder_name = x_data.name.replace('.zip', '')
+                    if xml_path.exists():
+                        shutil.copy(xml_path, output_path / folder_name)
+                    else:
+                        print("missing xml:" + str(xml_path))
+                else:
+                    shutil.copy(x, output_dir)
     else:
         raise Exception(data_dir + ' path does not exists!')
 
@@ -84,14 +83,15 @@ def load_vol(path: str, num_pages: int) -> List[HtrcPage]:
     return pages
 
 
-def swinburne_clean_vol(vol_dir_path_list: list, out_dir: str):
+def clean_vol(vol_dir_path_list: list, out_dir: str):
     vol_num = 0
+
     for vol_dir_path in tqdm(vol_dir_path_list):
         print(f"this is vol_dir_path: {vol_dir_path}")
         filename = vol_dir_path.split("/", -1)[-2]
-        # print(f"this is filename: {filename}")
+        print(f"this is filename: {filename}")
         page_paths = sorted(glob.glob(vol_dir_path + '/*.txt'))
-        # print(page_paths)
+        print(page_paths)
         file_count = len(page_paths)
         loaded_vol = load_vol(vol_dir_path, file_count)
         pages = parse_page_structure(loaded_vol)
