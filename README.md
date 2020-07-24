@@ -3,26 +3,25 @@
 </p>
 
 # HTRC-Text-Processing Library
-> 
-<!-- # htrc-text-processing Library [Under Development] -->
+>  Tool to process  [pairtree](https://confluence.ucop.edu/display/Curation/PairTree) format data in 17 million digitized works at HathiTrust.
 ## Table of Contents
-1. [What is htrc-text-processing Library](#what-is)
-2. [How to Install/Use](#install)
+1. [About htrc-text-processing Library](#about)
+2. [Installation](#install)
 3. [Usage](#usage)
 4. [Examples](#examples)
-5. [What else?](#what-else)
 
-## About htrc-text-processing Library<a name="what-is"></a>
-Description goes here.
 
-## How to  Install <a name="install"></a>
+## About `htrc-text-processing` Library<a name="about"></a>
+Detailed Description goes here.
 
-currenlty only by downloading `htrc_text_processing` folder and placed in your working directory.
+## Installation <a name="install"></a>
 
-easiest way is, just clone the repo and run `example1.py`.
-
-TODO 
-need to create a pip install verion (after creating all functionalities)  
+To install,
+```bash
+pip install htrc-text-processing
+```
+That's it! This library is written for Python 3.6+. For Python beginners, you'll need [pip](https://pip.pypa.io/en/stable/installing/).
+  
 
 ## What you can do with this. <a name="usage"></a>
 
