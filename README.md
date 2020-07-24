@@ -27,10 +27,15 @@ That's it! This library is written for Python 3.6+. For Python beginners, you'll
 
 * Function: `get_zip()` 
 
-    A function that finds the zip files at the end of the pairtree, moves them to a new folder and expands them, removing the zips
+    A function that finds the zip files at the end of the pairtree, moves them to a new folder and expands them, removing the zips.
+    
+    Inputs:
+    
+    1. Path (string) to directory that holds the pairtree.
+    2. Path (string) to directory that will hold the folders from expanded zips.
+
 
     ```python
-    import htrc_text_processing 
     htrc_text_processing.get_zips('<path to pairtree parent/s>', 'path to output directory')
     ```
-
+* Function: `clean_file_name()`
