@@ -23,17 +23,14 @@ pip install htrc-text-processing
 That's it! This library is written for Python 3.6+. For Python beginners, you'll need [pip](https://pip.pypa.io/en/stable/installing/).
   
 
-## What you can do with this. <a name="usage"></a>
+## Usage <a name="usage"></a>
 
-A function that finds the zip files at the end of the pairtree, moves them to a new folder and expands them, removing the zips
+1. `get_zip`
 
-```python
-import htrc_text_processing as htrc_tp 
+...A function that finds the zip files at the end of the pairtree, moves them to a new folder and expands them, removing the zips
 
-# Expand all zip files seperately into a given folder
-htrc_tp.get_zips_extract('sample-pairtree-data-parent/sample-pairtree-data', 'output_unziped_files') 
-
-# In case you only need zip files use this function 
-htrc_tp.get_zips_only('pairtree-data', 'output_only_zip_files') 
-```
+... ```python
+    import htrc_text_processing 
+    htrc_text_processing.get_zips('<path to pairtree parent/s>', 'path to output directory')
+    ```
 
