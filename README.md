@@ -1,3 +1,7 @@
+<a href="https://www.hathitrust.org/htrc"><img src="https://www.hathitrust.org/files/HTRC_logo.jpg" width="200" title="HathiTrust Reseach Center" alt="HTRC"></a>
+
+
+
 # htrc-text-processing Library [Under Development]
 ## Table of Contents
 1. [What is htrc-text-processing Library](#what-is)
