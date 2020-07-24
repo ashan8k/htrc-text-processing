@@ -25,11 +25,11 @@ That's it! This library is written for Python 3.6+. For Python beginners, you'll
 
 ## Usage <a name="usage"></a>
 
-1. `get_zip`
+* Function: `get_zip()` 
 
-...A function that finds the zip files at the end of the pairtree, moves them to a new folder and expands them, removing the zips
+    A function that finds the zip files at the end of the pairtree, moves them to a new folder and expands them, removing the zips
 
-... ```python
+    ```python
     import htrc_text_processing 
     htrc_text_processing.get_zips('<path to pairtree parent/s>', 'path to output directory')
     ```
