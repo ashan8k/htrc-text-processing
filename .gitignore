@@ -1,3 +1,7 @@
+build/
+dist/
+htrc_text_processing.egg-info/
+outputs/
 htrc_text_processing/__pycache__/
 .idea/
 output_unziped_files/

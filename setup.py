@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='htrc-text-processing',  
-    version='0.0.1',
+    version='0.0.2',
     #scripts=['htrc-text-processing'] ,
     author="Ashan Liyanage, Ryan Dubnicek",
     author_email="ashan8k@gmail.com",
