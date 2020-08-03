@@ -179,7 +179,9 @@ def load_vol(path: str, num_pages: int) -> List[HtrcPage]:
 def clean_vol(vol_dir_path_list: list, out_dir: str):
     vol_num = 0
 
-    assert isinstance(vol_dir_path_list, list), 'clean_vol() 1st parameter vol_dir_path_list="{}" not of <class "list">'.format(vol_dir_path_list)
+    assert isinstance(vol_dir_path_list,
+                      list), 'clean_vol() 1st parameter vol_dir_path_list="{}" not of <class "list">'.format(
+        vol_dir_path_list)
     assert isinstance(out_dir, str), 'clean_vol() 2nd parameter out_dir="{}" not of <class "str">'.format(
         out_dir)
 
@@ -204,3 +206,35 @@ def clean_vol(vol_dir_path_list: list, out_dir: str):
             shutil.move(clean_file_path, out_dir)
 
     return print(f"Cleaned {vol_num} volume(s)")
+
+
+def check_vols(vol_dir_path_list: list, clean_dir_path: str):
+    assert isinstance(vol_dir_path_list,
+                      list), 'clean_vol() 1st parameter vol_dir_path_list="{}" not of <class "list">'.format(
+        vol_dir_path_list)
+    assert isinstance(clean_dir_path, str), 'clean_vol() 2nd parameter out_dir="{}" not of <class "str">'.format(
+        clean_dir_path)
+    print(f"There are {len(vol_dir_path_list)} total volumes to clean.")
+    clean_volume_list = glob.glob(clean_dir_path + '/*.txt')
+    list_clean_files = []
+    for file in clean_volume_list:
+        p = Path(file)
+        list_clean_files.append(p.name)
+        # print(p.name)
+    count = 0
+    need_to_clean = []
+    for path in vol_dir_path_list:
+        p = Path(path)
+        ps = (p.name + ".txt")
+        if ps not in list_clean_files:
+            # print(p)
+            need_to_clean.append(CRED + str(p) + CEND)
+        else:
+            count += 1
+
+    print(f"{count} volumes have already been cleaned.")
+
+    if need_to_clean:
+        print("Following Directories need to clean")
+        print("\n".join(need_to_clean))
+
