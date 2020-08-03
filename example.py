@@ -16,17 +16,13 @@ from pathlib import Path
 # htrc_tp.normalize_txt_file_names('outputs/unzips2/39015059701311/')
 
 page_directory_list = glob.glob('outputs/unzipped2/*/')
-print(len(page_directory_list))
-for f in page_directory_list:
-   # htrc_tp.normalize_txt_file_names(f)
-   print(f)
-    #time.sleep(1)
-
-htrc_tp.normalize_txt_file_names('outputs/unzipped2/39002018496662/')
-# htrc_tp.clean_vol(['outputs/unziped/39002002224252'], 'temp')
 clean_vol_out_dir = 'outputs/cleaned_vols'
-page_directory_list = glob.glob('outputs/unzipped2/*/')
-print(len(page_directory_list))
-htrc_tp.clean_vol(page_directory_list, clean_vol_out_dir)
+htrc_tp.check_vols(page_directory_list, clean_vol_out_dir)
+# htrc_tp.normalize_txt_file_names('outputs/unzipped2/39002018496662/')
+# htrc_tp.clean_vol(['outputs/unziped/39002002224252'], 'temp')
+#
+# page_directory_list = glob.glob('outputs/unzipped2/*/')
+# print(len(page_directory_list))
+# htrc_tp.clean_vol(page_directory_list, clean_vol_out_dir)
 
-#htrc_tp.clean_vol(page_directory_list,1)
+# htrc_tp.clean_vol(page_directory_list,1)
