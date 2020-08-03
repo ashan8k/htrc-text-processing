@@ -56,3 +56,4 @@ That's it! This library is written for Python 3.6+. For Python beginners, you'll
     1. List of paths (strings) to directories that holds page files, one per volume
     2. Path (string) to output directory where clean single text files will be stored after cleaning and concatenating pages together
     
+Faced an issues? Please file [here](https://github.com/ashan8k/htrc-text-processing/issues)
