@@ -38,15 +38,15 @@ That's it! This library is written for Python 3.6+. For Python beginners, you'll
     ```python
     htrc_text_processing.get_zips('<path to pairtree parent/s>', 'path to output directory')
     ```
-* Function: `clean_file_name()`
+* Function: `normalize_txt_file_names()`
 
-    A function that normalizes page file names.
+    A function that clean and normalizes page file names.
     
     Example: turns `39002088672754_000001.txt` into `00000001.txt`
 
 
     ```python
-    htrc_text_processing.clean_file_name('outputs/zips/35556044272359/39002088672754_000001.txt') #this will rename file into `00000001.txt`
+    htrc_text_processing.normalize_txt_file_names('txt path or dir to txts') 
     ```
   
 * Function: `clean_vol()`
@@ -56,4 +56,19 @@ That's it! This library is written for Python 3.6+. For Python beginners, you'll
     1. List of paths (strings) to directories that holds page files, one per volume
     2. Path (string) to output directory where clean single text files will be stored after cleaning and concatenating pages together
     
-Faced an issues? Please file [here](https://github.com/ashan8k/htrc-text-processing/issues)
+    
+* Function: `check_vols()`
+    
+    Inputs: 
+    
+    1. Page directory List
+    2. Cleaned vols output dir
+    
+    Output 
+    
+    1. Page directory list which is not cleaned yet
+        
+    ```python
+  new_page_directory_list = htrc_text_processing.check_vols(page_directory_list, clean_vol_out_dir)
+    ```
+### issues? Please file [here](https://github.com/ashan8k/htrc-text-processing/issues)
