@@ -67,12 +67,19 @@ def get_zips(data_dir, output_dir, cmd='x'):
         raise Exception(data_dir + ' path does not exists!')
 
 
+def rename_file(file_path):
+    fname = file_path.name.split("_")[-1]
+    file_path_replace = file_path.parent / (
+            ''.join([char * (12 - len(str(fname))) for char in '0']) + str(fname))
+    os.rename(file_path, file_path_replace)
+
+
 def clean_txt_file_names(file):
     file_path = Path(file)
     if file_path.exists() and file_path.is_file():
         if '.txt' in str(file_path):
-            print(file_path.name)
-            os.rename(file_path, file_path.parent / file_path.name.split("_")[-1])
+            # print(file_path.name)
+            rename_file(file_path)
         else:
             error_message("Not a txt file\nInvalid txt file: " + str(file_path))
 
@@ -81,7 +88,7 @@ def clean_txt_file_names(file):
         for x in tqdm(glob.glob(str(file_path) + '/*.txt', recursive=True)):
             # print(x)
             x_path = Path(x)
-            os.rename(x_path, x_path.parent / x_path.name.split("_")[-1])
+            rename_file(x_path)
     else:
         error_message("Path/File not exists. Path = " + str(file_path))
 
@@ -108,18 +115,20 @@ def normalize_txt_file_names(dir_or_file):
                 # print(txt_file_name)
                 txt_files.append(txt_file_name)
             else:
-                error_message("Invalid txt file format \nInvalid txt file: " + str(x_path))
+                print("Invalid txt file format \nInvalid txt file: " + str(x_path))
 
         if not txt_files:
             error_message("No txt filed found in " + str(dir_or_file_path) +
                           "\nPlease give a directory which have txt files")
 
-        ll = sorted(txt_files)
-        count = int(min(ll))
+        ll = [int(j) for j in txt_files]
+        ll = sorted(ll)
+        # print(ll)
+        count = ll[0]
         renamed_list = []
         for i in tqdm(ll):
-            if count != int(i) or len(i) != 8:
-                file_path = dir_or_file_path / (i + ".txt")
+            if count != i:
+                file_path = dir_or_file_path / (''.join([char * (8 - len(str(i))) for char in '0']) + str(i) + ".txt")
                 file_path_replace = dir_or_file_path / (
                         ''.join([char * (8 - len(str(count))) for char in '0']) + str(count) + ".txt")
                 os.rename(file_path, file_path_replace)
@@ -140,19 +149,6 @@ def normalize_txt_file_names(dir_or_file):
         print('txt file name cleaning started!')
         clean_txt_file_names(dir_or_file)
         print('txt file name cleaning done!')
-        txt_file_name = (dir_or_file_path.name.split(".")[0]).split("_")[-1]
-        # print(txt_file_name)
-        file_path = dir_or_file_path.parent / (txt_file_name + ".txt")
-        if is_integer(txt_file_name):
-            value = int(txt_file_name)
-            file_path_replace = dir_or_file_path.parent / (
-                    ''.join([char * (8 - len(str(value))) for char in '0']) + str(value) + ".txt")
-            # print(file_path)
-            # print(file_path_replace)
-            os.rename(file_path, file_path_replace)
-        else:
-            error_message("Invalid txt file format \nInvalid txt file: " + str(file_path))
-
     else:
         error_message("Directory/File not exists !!!. \nDirectory/File Path = " + str(dir_or_file_path))
 
@@ -187,7 +183,9 @@ def clean_vol(vol_dir_path_list: list, out_dir: str):
 
     for vol_dir_path in tqdm(vol_dir_path_list):
         print(f"this is vol_dir_path: {vol_dir_path}")
-        filename = vol_dir_path.split("/", -1)[-2]
+        # filename = vol_dir_path.split("/", -1)[-2]
+        filename = Path(vol_dir_path).name
+        filename = str(filename)
         print(f"this is filename: {filename}")
         page_paths = sorted(glob.glob(vol_dir_path + '/*.txt'))
         print(page_paths)
@@ -208,7 +206,7 @@ def clean_vol(vol_dir_path_list: list, out_dir: str):
     return print(f"Cleaned {vol_num} volume(s)")
 
 
-def check_vols(vol_dir_path_list: list, clean_dir_path: str):
+def check_vol(vol_dir_path_list: list, clean_dir_path: str):
     assert isinstance(vol_dir_path_list,
                       list), 'clean_vol() 1st parameter vol_dir_path_list="{}" not of <class "list">'.format(
         vol_dir_path_list)
@@ -228,7 +226,7 @@ def check_vols(vol_dir_path_list: list, clean_dir_path: str):
         ps = (p.name + ".txt")
         if ps not in list_clean_files:
             # print(p)
-            need_to_clean.append(CRED + str(p) + CEND)
+            need_to_clean.append(str(p))
         else:
             count += 1
 
@@ -236,5 +234,7 @@ def check_vols(vol_dir_path_list: list, clean_dir_path: str):
 
     if need_to_clean:
         print("Following Directories need to clean")
-        print("\n".join(need_to_clean))
+        print(CRED + "\n".join(need_to_clean) + CEND)
+
+    return need_to_clean
 
